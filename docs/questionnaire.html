@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free questionnaire | Lamakko</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="Lamakko"></a>
+    <button class="nav-toggle" type="button" aria-label="Open menu">Menu</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">How it works</a>
+      <a href="about.html">About</a>
+      <a href="confidentiality.html">Confidentiality</a>
+      <a class="nav-cta active" href="questionnaire.html">Free questionnaire</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Free questionnaire</h1>
+      <p>Answer what you can. “Not sure” is fine. Nick will reply within one working day.</p>
+    </div>
+  </section>
+
+  <main class="page">
+    <div class="wrap" style="max-width:760px">
+      <div class="form-note">
+        The questionnaire is <strong>free</strong>. Or call <a href="tel:+447494658855">07494 658855</a> if you would rather speak first.
+      </div>
+
+      <form class="preview-form" id="intake-form">
+        <label>Your name *</label>
+        <div class="row">
+          <input type="text" name="first" placeholder="First" required>
+          <input type="text" name="last" placeholder="Last" required>
+        </div>
+
+        <label>Email *</label>
+        <input type="email" name="email" placeholder="you@email.com" required>
+        <p class="help">I will use this to send your next step. One address is enough.</p>
+
+        <label>1. What are you training for? *</label>
+        <input type="text" name="goal" required placeholder="e.g. a 10k, a fight, a season, getting competition-ready">
+
+        <label>2. When is that, roughly?</label>
+        <select name="timeframe">
+          <option value="No date yet">No date yet</option>
+          <option value="Within 4 weeks">Within 4 weeks</option>
+          <option value="1–3 months">1–3 months</option>
+          <option value="3–6 months">3–6 months</option>
+          <option value="6+ months">6+ months</option>
+        </select>
+
+        <label>3. What does a normal training week look like?</label>
+        <textarea name="training" rows="3" placeholder="Days, session types, how long you have been doing this"></textarea>
+
+        <label>4. On average, how many hours of sleep do you get?</label>
+        <div class="choices">
+          <label><input type="radio" name="sleep" value="Around 7 hours"> Around 7 hours</label>
+          <label><input type="radio" name="sleep" value="More than 7 hours"> More than 7 hours</label>
+          <label><input type="radio" name="sleep" value="Less than 7 hours"> Less than 7 hours</label>
+        </div>
+
+        <label>5. Do you do anaerobic work (e.g. lifting weights)?</label>
+        <div class="choices">
+          <label><input type="radio" name="weights" value="Yes"> Yes</label>
+          <label><input type="radio" name="weights" value="No"> No</label>
+          <label><input type="radio" name="weights" value="Don't know"> Don't know</label>
+        </div>
+
+        <label>6. If you are over 18, do you drink alcohol?</label>
+        <div class="choices">
+          <label><input type="radio" name="alcohol" value="Yes"> Yes</label>
+          <label><input type="radio" name="alcohol" value="No"> No</label>
+        </div>
+
+        <label>7. Are you focused on a specific body part?</label>
+        <input type="text" name="focus" placeholder="Upper, lower, core, or no specific focus">
+
+        <label>8. Do you know your VO2 max?</label>
+        <input type="text" name="vo2" placeholder="Number in mL/kg/min, or leave blank">
+        <p class="help">Maximum oxygen your body uses during exercise. Skip if you do not know.</p>
+
+        <button class="btn btn-orange" type="submit">Send questionnaire</button>
+        <p class="help">When you submit, your answers are sent straight to <strong>nnnic95@gmail.com</strong> — no email app opens. Or <a href="tel:+447494658855">call 07494 658855</a> instead.</p>
+      </form>
+
+      <p>Your answers are used only to help Nick respond to you. See the <a href="confidentiality.html">confidentiality page</a>.</p>
+    </div>
+  </main>
+
+  <div class="sticky-cta">
+    <a class="btn btn-white" href="tel:+447494658855">Prefer to call?</a>
+  </div>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div><strong>Lamakko UK</strong></div>
+      <div>
+        <a href="tel:+447494658855">07494 658855</a>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
