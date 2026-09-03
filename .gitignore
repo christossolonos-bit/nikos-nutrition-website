@@ -1,0 +1,10 @@
+*.exe
+dist/
+build/
+*.spec
+__pycache__/
+_preview_extract/
+backup*/
+*.tar.gz
+.DS_Store
+Thumbs.db
