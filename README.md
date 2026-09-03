@@ -8,7 +8,7 @@ https://christossolonos-bit.github.io/nikos-nutrition-website/
 
 ## Local preview
 
-Open `index.html` in a browser, or run:
+Open `_site_preview/index.html` in a browser, or run:
 
 ```bash
 python preview_launcher.py
